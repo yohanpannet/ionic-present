@@ -83,8 +83,9 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: port,
+					hostname: 'localhost',
 					base: '.',
-                    livereload: false,
+                    livereload: true,
                     open: true
 				}
 			}
@@ -103,7 +104,7 @@ module.exports = function(grunt) {
 
 		watch: {
             options: {
-                livereload: false
+                livereload: true
             },
 			js: {
 				files: [ 'Gruntfile.js', 'js/reveal.js' ],
